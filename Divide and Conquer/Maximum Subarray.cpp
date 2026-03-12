@@ -26,7 +26,9 @@ public:
         return max(leftSum,max(rightSum,crossSum));
         
     }
+
     int maxSubArray(vector<int>& nums) {
         return maxSum(nums,0,nums.size()-1);
     }
 };
+// O(nlogn)
