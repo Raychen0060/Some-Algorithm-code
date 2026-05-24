@@ -1,3 +1,4 @@
+// 木棍需被切割的地方由小到大排列好
 #include <bits/stdc++.h>
 using namespace std;
 
