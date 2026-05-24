@@ -13,7 +13,7 @@ int main() {
         
         for (int d=2; d<=N+1; ++d){
             for (int i=0; i<=N-d+1; ++i) {
-                cost[i][i+d] = INT_MAX; // 
+                cost[i][i+d] = INT_MAX; // 求出 i 到 i+d 的最小 cost
                 for (int j=i+1; j<i+d; ++j) {
                     int temp = cost[i][j] + cost[j][i+d];
                     if (temp < cost[i][i+d]) cost[i][i+d] = temp;
