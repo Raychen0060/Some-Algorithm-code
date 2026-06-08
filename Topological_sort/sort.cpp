@@ -29,7 +29,6 @@ public:
     void topologicalSort() {
         stack<int> s;
         vector<bool> visited(V, false);
-
         // 對所有節點執行 DFS
         for (int i = 0; i < V; ++i) {
             if (!visited[i]) {
